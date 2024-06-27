@@ -16,16 +16,12 @@ def solution():
 
     weight = W
     answer = 0
-    while weight and gold:
+    while weight > 0 and gold:
 
         P, M = heappop(gold)
 
-        if M <= weight:
-            answer += (-P * M)
-            weight -= M
-        else:
-            answer += (-P * weight)
-            weight = 0
+        answer += ((-P * M) if M <= weight else (-P * weight))
+        weight -= M
 
     print(answer)
         
