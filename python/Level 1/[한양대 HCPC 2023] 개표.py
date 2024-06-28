@@ -1,5 +1,5 @@
 
-""" Level 1. 개표 """
+""" Level 1. [한양대 HCPC 2023] 개표 """
 
 import sys
 
